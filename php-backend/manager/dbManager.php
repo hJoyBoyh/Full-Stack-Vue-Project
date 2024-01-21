@@ -7,7 +7,7 @@ class DBManager{
 
     private function __construct()
     {
-        $this->pdo = new PDO('mysql:host=localhost:3306;dbname=ricassodb', 'root',
+        $this->pdo = new PDO('mysql:host=localhost:3306;dbname=RicassoDb', 'root',
         '');
     }
 

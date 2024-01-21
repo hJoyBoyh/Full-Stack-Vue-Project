@@ -26,7 +26,7 @@ export default {
             data.append('email', this.User.email)
             data.append('password', this.User.password)
 
-            axios.post("http://localhost:4208/Projet3/php-backend/connexion.php", data).then((res) => {
+            axios.post("http://localhost:4208/Full-Stack-Vue-Project/php-backend/connexion.php", data).then((res) => {
 
                 this.text = String(res.data)
 

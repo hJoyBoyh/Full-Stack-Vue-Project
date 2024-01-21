@@ -20,7 +20,7 @@ export default {
       data.append('email', this.InfolettreInfo.email)
 
 
-      axios.post("http://localhost:4208/Projet3/php-backend/infolettre.php", data).then((res) => {
+      axios.post("http://localhost:4208/Full-Stack-Vue-Project/php-backend/infolettre.php", data).then((res) => {
         if (res.data.error) {
           console.log(res.data.error)
         }

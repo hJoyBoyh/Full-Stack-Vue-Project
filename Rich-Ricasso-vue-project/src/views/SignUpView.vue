@@ -19,7 +19,7 @@ export default{
              data.append('email',this.InscriptionUser.email)
              data.append('password',this.InscriptionUser.password)
 
-             axios.post("http://localhost:4208/Projet3/php-backend/inscription.php",data).then((res)=>{
+             axios.post("http://localhost:4208/Full-Stack-Vue-Project/php-backend/inscription.php",data).then((res)=>{
                 if(res.data.error){
                        console.log(res.data.error)
                     }

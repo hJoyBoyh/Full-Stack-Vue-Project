@@ -98,7 +98,7 @@ export default {
         if (this.panierActuel[0] != '') {
             this.panierActuel.forEach(element => {
 
-                axios.get(`http://localhost:4208/Projet3/php-backend/?action=produit-id${element}`).then((res) => {
+                axios.get(`http://localhost:4208/Full-Stack-Vue-Project/php-backend/?action=produit-id${element}`).then((res) => {
                     this.produits.push(res.data)
                     console.log(this.produits)
                     console.log(window.location.hostname)

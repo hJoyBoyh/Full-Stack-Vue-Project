@@ -23,7 +23,7 @@ export default {
             var data = new FormData()
              data.append('id',this.UserInfo[0])
              data.append('produitId',element)
-            axios.post("http://localhost:4208/Projet3/php-backend/produitAcheter.php",data).then((res)=>{
+            axios.post("http://localhost:4208/Full-Stack-Vue-Project/php-backend/produitAcheter.php",data).then((res)=>{
                 if(res.data.error){
                     console.log(res.data.error)
                 }

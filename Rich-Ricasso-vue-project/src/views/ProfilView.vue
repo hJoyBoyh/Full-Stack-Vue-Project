@@ -46,7 +46,7 @@ export default{
              data.append('courriel',this.User.email)
              data.append('mdp',this.User.password)
             
-             axios.post("http://localhost:4208/Projet3/php-backend/updateInfo.php",data).then((res)=>{
+             axios.post("http://localhost:4208/Full-Stack-Vue-Project/php-backend/updateInfo.php",data).then((res)=>{
                 if(res.data.error){
                        console.log(res.data.error)
                     }

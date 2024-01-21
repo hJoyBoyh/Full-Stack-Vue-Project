@@ -57,7 +57,7 @@ export default{
             this.singleProduit = ''
         },
         onClickOneProduit(id){
-            axios.get(`http://localhost:4208/Projet3/php-backend/?action=produit-id${id}`).then((res)=>{
+            axios.get(`http://localhost:4208/Full-Stack-Vue-Project/php-backend/?action=produit-id${id}`).then((res)=>{
             this.singleProduit = res.data
             console.log(this.singleProduit)
             document.querySelector('.column').style.display="none"
@@ -66,7 +66,7 @@ export default{
         },
         onChangeTaille(event){
             console.log(event.target.value)
-            axios.get(`http://localhost:4208/Projet3/php-backend/?action=produit-${this.taille}`).then((res)=>{
+            axios.get(`http://localhost:4208/Full-Stack-Vue-Project/php-backend/?action=produit-${this.taille}`).then((res)=>{
             this.produits = res.data
             console.log(this.produits)
             this.categorie = `Par Taille: ${this.taille}`
@@ -75,7 +75,7 @@ export default{
         },
         onChangeCouleur(event){
             console.log(event.target.value)
-            axios.get(`http://localhost:4208/Projet3/php-backend/?action=produit-${this.couleur}`).then((res)=>{
+            axios.get(`http://localhost:4208/Full-Stack-Vue-Project/php-backend/?action=produit-${this.couleur}`).then((res)=>{
             this.produits = res.data
             console.log(this.produits)
             this.categorie = ` Par Couleur: ${this.couleur}`
@@ -83,7 +83,7 @@ export default{
             
         },
         toggleTous(){
-            axios.get('http://localhost:4208/Projet3/php-backend/?action=produit').then((res)=>{
+            axios.get('http://localhost:4208/Full-Stack-Vue-Project/php-backend/?action=produit').then((res)=>{
             this.produits = res.data
             console.log(this.produits)
             this.categorie = "Tous"
@@ -91,7 +91,7 @@ export default{
         },
         toggleChemise(){
         
-            axios.get('http://localhost:4208/Projet3/php-backend/?action=produit-chemise').then((res)=>{
+            axios.get('http://localhost:4208/Full-Stack-Vue-Project/php-backend/?action=produit-chemise').then((res)=>{
             this.produits = res.data
             console.log(this.produits)
             this.categorie = "Chemise"
@@ -101,7 +101,7 @@ export default{
          
 
 
-            axios.get('http://localhost:4208/Projet3/php-backend/?action=produit-cravate').then((res)=>{
+            axios.get('http://localhost:4208/Full-Stack-Vue-Project/php-backend/?action=produit-cravate').then((res)=>{
             this.produits = res.data
             console.log(this.produits)
             this.categorie = "Cravate"
@@ -109,7 +109,7 @@ export default{
         },
         toggleASC(){
         
-            axios.get('http://localhost:4208/Projet3/php-backend/?action=produit-asc').then((res)=>{
+            axios.get('http://localhost:4208/Full-Stack-Vue-Project/php-backend/?action=produit-asc').then((res)=>{
             this.produits = res.data
             console.log(this.produits)
             this.categorie = "ASC"
@@ -118,7 +118,7 @@ export default{
         ,
         toggleDESC(){
         
-            axios.get('http://localhost:4208/Projet3/php-backend/?action=produit-desc').then((res)=>{
+            axios.get('http://localhost:4208/Full-Stack-Vue-Project/php-backend/?action=produit-desc').then((res)=>{
             this.produits = res.data
             console.log(this.produits)
             this.categorie = "DESC"
@@ -128,7 +128,7 @@ export default{
     
     ,
     mounted(){
-        axios.get('http://localhost:4208/Projet3/php-backend/?action=produit').then((res)=>{
+        axios.get('http://localhost:4208/Full-Stack-Vue-Project/php-backend/?action=produit').then((res)=>{
             this.produits = res.data
             console.log(this.produits)
             this.categorie = "Tous"
